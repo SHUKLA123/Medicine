@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html'%}
+      {%block body_block%}
+      <center><h1>Medicine Information Dashboard</h1></center><hr><br><br>
+      <center><table border='2' style="background-color: green; color : yellow;">
+        <thead>
+          <th>Medicine</th>
+          <th>Company_Name</th>
+          <th>Number_of_Tablet</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Update</th>
+          <th>Delete</th>
+        </thead>
+        {%for  buy in buy1_list %}
+        <tr>
+          <td>{{buy.Medicine}}</td>
+          <td>{{buy.Company_Name}}</td>
+          <td>{{buy.Number_of_Tablet}}</td>
+          <td>{{buy.quantity}}</td>
+          <td>{{buy.price}}</td>
+            <td><a href="/update/{{buy.id}}" style="color:red; background:blue;">Update</a></td>
+            <td><a href="/delete/{{buy.id}}" style="color:red; background:blue;">Delete</a></td>
+        </tr>
+        {%endfor%}
+      </table></center><br><br><br>
+      <center><a href="/create" class='btn btn-primary btn-lg'>Do You Want to Insert New Medicine Info</a></center>
+      {%endblock%}

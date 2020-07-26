@@ -1,0 +1,207 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Medicine.com</title>
+
+        <link rel="shortcut icon" type ="images/jpg" href= "{% static "images/logo.jpg" %}" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+        <link rel="stylesheet" href="{% static "vendors/linericon/style.css"%}">
+        <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
+        <link rel="stylesheet" href="{% static "vendors/lightbox/simpleLightbox.css" %}">
+        <link rel="stylesheet" href="{% static "vendors/nice-select/css/nice-select.css" %}">
+        <!-- main css -->
+        <link rel="stylesheet" href="{% static "css/style.css" %}">
+        <link rel="stylesheet" href="{% static "css/responsive.css"%}">
+      <style>
+        .home_banner_area{
+          background-image:url({%static "images/sunny2.jpg"%});
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      </style>
+    </head>
+<body>
+
+	<!--================ Start Header Menu Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h" href="index.html"><img src="{% static "images/bro.png"%}" alt=""></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="http://127.0.0.1:8000">Home</a></li>
+								<li class="nav-item"><a class="nav-link" href="/termandpolicy">Term & Policy</a>
+								<li class="nav-item"><a class="nav-link" href="/search">Donate</a></li>
+                <li class="nav-item"><a class="nav-link" href="/buy">Buy</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contactus">Contact Us</a>
+                <li class="nav-item"><a class="nav-link" href="/profile">Profile</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!--================ End Header Menu Area =================-->
+
+	<!--================ Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="banner_content">
+          <a href="https://www.youtube.com/">
+          <p class="upper_text">Medicine.com</p></a>
+
+					<p>
+						Select the mode which you want to take . If You Want to buy then choose the option Buy or if you want to sell then choose the option sell .</p>
+					<a class="primary_btn mr-20" href="/buy">Buy</a>
+					<a class="primary_btn yellow_btn text-white" href="/search">Sell</a>
+        </div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Home Banner Area =================-->
+
+	<!--================ Start Causes Area =================-->
+	<br><br>
+	<!--================ End Causes Area =================-->
+
+	<!--================ Start About Us Area =================-->
+	<section class="about_area section_gap_bottom">
+		<div class="container">
+			<div class="row">
+				<div class="single_about row">
+					<div class="col-lg-6 col-md-12 text-center about_left">
+						<div class="about_thumb">
+              <img src="{%static "images/medicine.png" %}"  class="img-fluid" alt="">
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12 about_right">
+						<div class="about_content">
+							<h2>About Us</h2>
+              <p >We are here to short out one of the largest problem not in the India but all our world . So , I and our team here to short out that problem by the help of our website . As you all have the medicine which are not useable and you through that but now this is npot occur again and again . So our team has decided to make profit to you by buying that medicine .Stop! Throwing the medicine now .</p>
+              <p>We buy that medicine and by using some chemical experiment we recycle that product. After the recyling that product we make a full packet. Sell that product to the company . </p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End About Us Area =================-->
+
+	<!--================ Start CTA Area =================-->
+	<div class="cta-area section_gap overlay">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-7">
+					<h1>Become a patner of our company</h1>
+					<p>
+            Our moto is make profit and take profit.
+					</p>
+					<a href="#" class="primary_btn yellow_btn rounded">join with us</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br><br><br><br><br><br>
+
+	<!--================ Start footer Area  =================-->
+	<footer>
+		<div class="footer-area">
+			<div class="container">
+				<div class="row section_gap">
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="single-footer-widget tp_widgets">
+							<h4 class="footer_title large_title">Our Mission</h4>
+							<p>
+								Our mission is to utilize the resorces and make profit to not the company
+                but also to the people
+							</p>
+							<p>
+								But we have multiple choices and our team also establishing more ideas to make profit not for the people but also our enviroment.
+							</p>
+						</div>
+					</div>
+					<div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
+						<div class="single-footer-widget tp_widgets">
+							<h4 class="footer_title">Quick Links</h4>
+							<ul class="list">
+								<li><a href="http://127.0.0.1:8000">Home</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="/termandpolicy">Term & Policy</a></li>
+								<li><a href="/adminpage">Login</a></li>
+								<li><a href="/contactus">Contact Us</a></li>
+								<li><a href="/search">Sell</a></li>
+                <li><a href="/buy">Buy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+						<div class="single-footer-widget tp_widgets">
+							<h4 class="footer_title">Contact Us</h4>
+							<div class="ml-40">
+								<p class="sm-head">
+									<span class="fa fa-location-arrow"></span>
+									Head Office
+								</p>
+								<p>Hostel-no. 8(Neelkanth) Room no 36 , UIET Mdu, Rohtak city</p>
+
+								<p class="sm-head">
+									<span class="fa fa-phone"></span>
+									Phone Number
+								</p>
+								<p>
+									8571909652
+								</p>
+
+								<p class="sm-head">
+									<span class="fa fa-envelope"></span>
+									Email
+								</p>
+								<p>
+									niranjanshukla88@gmail.com
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</footer>
+	<!--================ End footer Area  =================-->
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="{% static "js/jquery-3.2.1.min.js" %}"></script>
+	<script src="{% static "js/popper.js"%}"></script>
+	<script src="{% static "js/bootstrap.min.js" %}"></script>
+	<script src="{% static "js/stellar.js"%}"></script>
+	<script src="{% static "vendors/lightbox/simpleLightbox.min.js"%}"></script>
+	<script src="{% static "vendors/nice-select/js/jquery.nice-select.min.js"%}"></script>
+	<script src="{% static "js/jquery.ajaxchimp.min.js" %}"></script>
+	<script src="{% static "js/mail-script.js"%}"></script>
+	<script src="{% static "js/countdown.js"%}"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="{% static "js/gmaps.min.js"%}"></script>
+	<script src="{% static "js/theme.js" %}"></script>
+</body>
+</html>

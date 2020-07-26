@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{%load staticfiles %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="shortcut icon" type ="images/jpg" href= "{% static "images/logo.jpg" %}" />
+  <title>
+    Profile Page
+  </title>
+  <style>
+    #a {
+      height: 900px;
+      width: 900px;
+      margin-left: 300px;
+    }
+#b{
+  height: 915px;
+  width: 1340px;
+}
+p img{
+  float: left;
+  border-right: 25px white solid;
+  box-shadow: none;
+}
+  </style>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="{% static "css/material-kit.css?v=2.0.5" %}" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="{% static "css/profile.css"%}" rel="stylesheet" />
+</head>
+
+<body class="profile-page sidebar-collapse">
+
+  <div class="page-header header-filter" data-parallax="true">
+<img id = "b" src="{%static "images/download.jpg"%}" alt="">
+  </div>
+  <div class="main main-raised">
+    <div class="profile-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 ml-auto mr-auto">
+            <div class="profile">
+              <div class="avatar">
+                <a href="http://127.0.0.1:8000/">
+                <img src="{% static "images/bro.jpg"%}" alt="Circle Image" class="img-raised rounded-circle img-fluid"></a>
+              </div>
+              <div class="name">
+                <h3 class="title">Niranjan Shukla</h3>
+                <h6>A Full Stack Developer (Beginner)</h6>
+                <h6>Coder(Medium)</h6>
+                <p>For going the home Click on Image </p>
+                <a href="#pablo" class="btn btn-just-icon btn-link btn-dribbble"><i class="fa fa-dribbble"></i></a>
+                <a href="#pablo" class="btn btn-just-icon btn-link btn-twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#pablo" class="btn btn-just-icon btn-link btn-pinterest"><i class="fa fa-pinterest"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="description text-center">
+
+          <p><img src="{% static "images/logo.png"%}" alt="Circle Image" class="img-raised rounded-circle img-fluid">I have given my 1 year for learning the Pyhton(Beg & Adv) &#x2014;But i also given my 6 month learning for only Django. But at now i am an intermidiate in django. &#x2014; At last i have given my 6 month in bulding my projects .Now i am learning Machine Learning through Keras . </p>
+        </div>
+        <br>
+<img id = "a" src="{% static "images/resume.png"%}" alt="">
+<script src="{% static "js/material-kit.js"%}"></script>
+<script src="{% static "js/material-kit.min.js"%}"></script>
+</body>
+</html>

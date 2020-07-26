@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container" >
+      <center>
+          <form method="post">
+          {{ form.as_p }}
+          {%if form%}
+          {%for f in form%}
+          <p>{{f.username}}</p>
+          <p>{{f.password}}</p>
+          <p>{{f.email}}</p>
+          <p>{{f.first_name}}</p>
+          <p>{{f.last_name}}</p>{%endfor%}
+          {% csrf_token %}
+          <button type="submit">Signup</button>
+          {%endif%}
+        </form></center>
+    </div>
+  </body>
+</html>

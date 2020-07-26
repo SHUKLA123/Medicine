@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html'%}
+      {%block body_block%}
+         <div class="jumbotron">
+           <h1>Information Details...</h1><hr>
+           <ul>
+             <li>Medicine Name: {{buy1.Medicine}}</li>
+             <li>Company_name: {{buy1.Company_Name}}</li>
+             <li>Number_of_Tablet: {{buy1.Number_of_Tablet}}</li>
+             <li>Price: {{buy1.price}}</li>
+             <li>Quantity Price: {{buy1.quantity}}</li>
+           </ul>
+            <a href="/crud"><button style="height:30px; width:50px;" type="button" name="button">List</button></a>
+         </div>
+
+      {%endblock%}

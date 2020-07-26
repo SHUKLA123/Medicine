@@ -1,0 +1,99 @@
+{% load staticfiles %}
+<html>
+	<head>
+		<title>Hello User</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" type ="images/jpg" href= "{% static "images/logo.jpg" %}" />
+		<link rel="stylesheet" href="{% static "css/main.css" %}" />
+		<style>
+
+		#e{
+			height: 43px;
+		}
+		</style>
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+					<ul class="nav navbar-nav menu_nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="/logout123">logout</a></li>
+						<li class="nav-item"><a href="http://127.0.0.1:8000"><img id ="e" src="{% static "images/favicon.ico" %}" alt=""></a></li>
+					</ul>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Section -->
+					<section class="wrapper">
+						<div class="inner">
+							<header class="align-center">
+								<h1>Welcome User !!!</h1>
+								<p>Here's Your admin page :</p>
+							</header>
+							<div class="flex flex-2">
+								<div class="col col2">
+									<h3>Hello Sunny Leon !!!</h3>
+									<p>Email id : sunnyleon88@gamil.com</p>
+									<p>Location : H.no 2554/a sector 3 bandra,Mumbai</p>
+									<p>Phone no. : 9546745912</p>
+								</div>
+								<div class="col col1 first">
+									<div class="image round fit">
+										<img src="{% static "images/sunny.jpg" %}" alt="Not found" />
+									</div>
+								</div>
+							</div>
+							</div>
+					</section>
+
+				<!-- Section -->
+					<section class="wrapper style1">
+						<div class="inner">
+							<header class="align-center">
+								<h2>History</h2>
+								<p>The purchace history which you have Buy/Sell.</p>
+							</header>
+
+								<div class="col align-center">
+									<table>
+										<th>Product No.</th>
+										<th>Product Name</th>
+										<th>Purchasing Date</th>
+										<th>Sold/Buy</th>
+										<tr>
+											<td>194576</td>
+											<td>Manforce Condom</td>
+											<td>19/02/2019</td>
+											<td>Buy</td>
+										</tr>
+										<tr>
+											<td>197576</td>
+											<td>Shilajeet Gold</td>
+											<td>19/01/2019</td>
+											<td>Buy</td>
+										</tr>
+										<tr>
+											<td>194576</td>
+											<td>Disprine</td>
+											<td>19/12/2018</td>
+											<td>Sold</td>
+										</tr>
+									</table>
+									<br><br>
+									<center><a href="http://127.0.0.1:8000/"><button type="button" name="button">Buy/Sold</button></a></center>
+								</div>
+					</section>
+			</div>
+			<script src="{% static "js/jquery.min.js" %}"></script>
+			<script src="{% static "js/jquery.scrolly.min.js" %}"></script>
+			<script src="{% static "js/jquery.scrollex.min.js" %}"></script>
+			<script src="{% static "js/skel.min.js" %}"></script>
+			<script src="{% static "js/util.js" %}"></script>
+			<script src="{% static "js/main.js" %}"></script>
+	</body>
+</html>

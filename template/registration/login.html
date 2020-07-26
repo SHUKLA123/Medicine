@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body><center>
+    <h1>Login Here :</h1>
+    <p>Its Official Use only</p>
+    <p>If any other do then it can be Arrested</p>
+        <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Login</button>
+      </form></center>
+  </body>
+</html>
